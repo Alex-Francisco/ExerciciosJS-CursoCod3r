@@ -8,3 +8,4 @@ function execOpsAritmeticas(valor1, valor2) {
   console.log(`Operação de divisão: ${valor1} ÷ ${valor2} = ${valor1 / valor2}`)
 }
 execOpsAritmeticas(10, 20);
+execOpsAritmeticas(25, 5);
