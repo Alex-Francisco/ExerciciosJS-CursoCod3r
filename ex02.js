@@ -13,3 +13,4 @@ function ladosTriangulo (ab, cd, ef) {
 
 ladosTriangulo(16, 20, 30);
 ladosTriangulo(20, 15, 5);
+ladosTriangulo(10, 25, 13);
