@@ -18,8 +18,7 @@ function ladosTriangulo (ab, cd, ef) {
         console.log("Negativo! Não se pode formar um triângulo com essas medidas.");
 }
 
-ladosTriangulo(5, 8, 7);
 ladosTriangulo(16, 20, 30);
 ladosTriangulo(15, 15, 15);
-ladosTriangulo(20, 15, 5);
-ladosTriangulo(10, 25, 13);
+ladosTriangulo(10, 14, 14);
+ladosTriangulo(25, 2, 1);
