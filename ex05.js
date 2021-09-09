@@ -7,8 +7,7 @@ que ela receba um valor como 0.30000000000000004 e retorne R$0,30 (observe a ví
 function formataMoeda (valor) {
   valorComDuasCasas = valor.toFixed(2);
   trocaPontoPorVirgula = valorComDuasCasas.replace('.', ',');
-  formataValor = trocaPontoPorVirgula.replace(trocaPontoPorVirgula, `R$${trocaPontoPorVirgula}`) 
-  console.log(`Foi passo o seguinte valor -> ${valor}, que após formatação virou ${formataValor}`)
+  console.log(`Foi passo o seguinte valor -> ${valor}, que após formatação virou R$${trocaPontoPorVirgula}`)
 }
 
 formataMoeda(0.30000000000000004);
