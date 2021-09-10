@@ -9,11 +9,12 @@ String: “10 20 20 8 25 3 0 30 1”
 Retorno: [3, 7] (Significa que ele bateu três vezes seu recorde de melhor pontuação e a pior pontuação
 aconteceu no sétimo jogo.) */
 
-let pontuacao = "10 20 20 8 25 3 0 30 1"
+// let pontuacao = "10 20 20 8 25 3 0 30 1" assim não vai era pra retornar [3, 7]
+let pontuacao = "30 40 20 4 51 25 42 38 56 0" // assim vai
 
 function checarPontuacao(pontuacao) {
     let pontosFeito = pontuacao.split(" ");
-    let qtdRecord = 1;
+    let qtdRecord = 0;
     let piorPontuacao = 1;
     let maiorPontuacao = pontosFeito[0];
     let menorPontuacao = pontosFeito[0];
