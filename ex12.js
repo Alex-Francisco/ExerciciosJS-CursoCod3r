@@ -8,4 +8,4 @@ function calFatorial(numero) {
     console.log(`O fatorial de ${numero} é ${resultado}`)
 }
 
-calFatorial(6);
+calFatorial(5);
