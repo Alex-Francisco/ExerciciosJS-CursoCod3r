@@ -25,4 +25,4 @@ comprarVeiculo("hatch");
 comprarVeiculo("SEdaNs");
 comprarVeiculo("Motocicletas    ");
 comprarVeiculo("    caminHonEteS");
-comprarVeiculo("    Ônibus   ")
+comprarVeiculo("    Ônibus   ");
