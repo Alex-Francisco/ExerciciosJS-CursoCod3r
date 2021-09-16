@@ -10,27 +10,24 @@ function novoSalario(salarioAtual, plano) {
     let planoPassado = plano.toUpperCase().trim();
     let planoAumento = null;
 
-    salAtual = salarioAtual;
-    planoAtual = plano;
-
     function aumento(salarioAtual, plano) {
         let aumento = salarioAtual * (planoAumento / 100) + salarioAtual
         console.log(`O salario atual é de R$ ${salarioAtual} e o plano atual é ${planoPassado}, o que dá direito ao aumento de ${planoAumento}%`);
         console.log(`O novo salário do funcionário é de R$${aumento}`)
     }
 
-    switch(plano) {
+    switch(planoPassado) {
         case "A":
             planoAumento = 10;
-            aumento(salAtual, planoAtual);
+            aumento(salarioAtual, planoPassado);
             break;
         case "B":
             planoAumento = 15;
-            aumento(salarioAtual, planoAtual);
+            aumento(salarioAtual, planoPassado);
             break;
         case "C":
             planoAumento = 20;
-            aumento(salarioAtual, planoAtual);
+            aumento(salarioAtual, planoPassado);
             break;
         default:
             console.log("Plano inválido");
@@ -38,6 +35,6 @@ function novoSalario(salarioAtual, plano) {
     }
 }
 
-novoSalario(2500, "A")
-novoSalario(2600, "B")
-novoSalario(3150, "C")
+novoSalario(1800, "a")
+novoSalario(2200, "B")
+novoSalario(3000, "C")
