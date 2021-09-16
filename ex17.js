@@ -9,19 +9,35 @@ novo salário. Use a estrutura switch e faça um caso default que indique que o 
 function novoSalario(salarioAtual, plano) {
     let planoPassado = plano.toUpperCase().trim();
     let planoAumento = null;
+
+    salAtual = salarioAtual;
+    planoAtual = plano;
+
+    function aumento(salarioAtual, plano) {
+        let aumento = salarioAtual * (planoAumento / 100) + salarioAtual
+        console.log(`O salario atual é de R$ ${salarioAtual} e o plano atual é ${planoPassado}, o que dá direito ao aumento de ${planoAumento}%`);
+        console.log(`O novo salário do funcionário é de R$${aumento}`)
+    }
+
     switch(plano) {
         case "A":
             planoAumento = 10;
-            let aumento = salarioAtual * (planoAumento / 100) + salarioAtual
-            console.log(`O salario atual é de R$${salarioAtual} e o plano atual é ${planoPassado}, o que dá direito ao aumento de ${planoAumento}%`);
-            console.log(`O novo salário do funcionário é de R$${aumento}`)
+            aumento(salAtual, planoAtual);
             break;
         case "B":
+            planoAumento = 15;
+            aumento(salarioAtual, planoAtual);
+            break;
+        case "C":
             planoAumento = 20;
-            let aumento = salarioAtual * (planoAumento / 100) + salarioAtual
+            aumento(salarioAtual, planoAtual);
+            break;
         default:
-            console.log("teste")
+            console.log("Plano inválido");
+            break;
     }
 }
 
-novoSalario(1200, "A")
+novoSalario(2500, "A")
+novoSalario(2600, "B")
+novoSalario(3150, "C")
