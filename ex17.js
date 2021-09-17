@@ -35,6 +35,7 @@ function novoSalario(salarioAtual, plano) {
     }
 }
 
-novoSalario(1800, "a")
-novoSalario(2200, "B")
-novoSalario(3000, "C")
+novoSalario(1800, "a");
+novoSalario(2200, "B");
+novoSalario(3000, "C");
+novoSalario(2000, "D");
