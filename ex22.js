@@ -6,7 +6,7 @@ compostos). O retorno deve ser o valor a ser pago para o respectivo mês escolhi
 function anuidade(mes, valor) {
     
     if (mes > 0 && mes <= 12) {
-        auxJuros = mes - 1;
+        let auxJuros = mes - 1;
         console.log(valor * ((1 + 0.05)**auxJuros).toFixed(2));
     } else {
         console.log("Mês inválido");
