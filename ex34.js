@@ -7,7 +7,6 @@ function avaliaStrig(str1, str2) {
     let existeChar = null;
 
     for (let i = 0; i < str1.length; i++) {
-
         for (let j = 0; j < str2.length; j++) {
             if(str1[i] == str2[i]) {
                 existeChar = true            
@@ -16,11 +15,9 @@ function avaliaStrig(str1, str2) {
             }
         }
     }
-    if (existeChar) {
-        console.log(true);
-    } else {
-        console.log(false);
-    }
+
+    existeChar ? console.log(true) : console.log(false);
+   
 }
 
 avaliaStrig("dois", "dois");
