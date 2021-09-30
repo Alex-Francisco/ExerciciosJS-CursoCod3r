@@ -4,10 +4,8 @@ para corrigir a ordem dos parâmetros caso a função receba o valor maior antes
 
 function intervaloImp(inicio, fim) {
     let maior = null, menor = null;
-    console.log(`Os números ímpares no intervalo de ${inicio} e ${fim} são:`)
     
-    if (inicio >= 0 && fim <= 100) {
-
+    if (inicio >= 0 && fim <= 100 && inicio <= 100 && fim >= 0) {
         if (inicio > fim) {
             maior = inicio
             menor = fim
@@ -15,14 +13,19 @@ function intervaloImp(inicio, fim) {
             maior = fim
             menor = inicio
         }
-
+        console.log("");
+        console.log(`Os números ímpares no intervalo de ${menor} e ${maior} são:`);
         for (i = menor; i <= maior; i++) {
             if (i % 2 != 0) {
                 console.log(i);
             }
         }
+    } else {
+        console.log("");
+        console.log("Número passado é menor que 0 ou maior que 100");
     }
 }
 
 intervaloImp(3, 97);
-intervaloImp(97, 3);
+intervaloImp(102, 15);
+intervaloImp(100, 15);
