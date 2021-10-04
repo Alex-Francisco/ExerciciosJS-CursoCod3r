@@ -12,13 +12,13 @@ function calcMult(vetorPassado, numPassado) {
 }
 
 function calcMult2(vetorPassado, numPassado) {
-    if (numPassado > 5) {
-        let resultado = []
-        for( let i = 0; i < vetorPassado.length; i++) {
+    let resultado = []
+    for( let i = 0; i < vetorPassado.length; i++) {
+        if (vetorPassado[i] > 5) {
             resultado.push(vetorPassado[i] * numPassado);
         }
-    console.log(resultado);
     }
+    console.log(resultado);
 }
 
 vetor = [1, 5, 10, 50, 100];
